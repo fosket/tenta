@@ -1,0 +1,25 @@
+.main {
+    display: block;
+    @include respond-to ('platta') {
+
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        margin: 3em 0;
+        padding: 0.5em;
+        grid-gap: 3em;
+        width: 100%;
+
+        @supports (grid-area: auto) {
+            @include respond-to ('pc') {
+                
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin: 3em 0;
+                    padding: 0.5em;
+                    grid-gap: 3em;
+                    width: 100%;
+                }
+            }
+        }
+
+    }

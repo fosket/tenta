@@ -1,0 +1,16 @@
+.main-content{
+    min-height: 100vh;
+    margin-bottom: 1em;
+}
+
+@supports (grid-area: auto) {
+    @include respond-to ('pc'){
+        .main-content{
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(8,1fr);
+            grid-gap: 20px;
+        }
+    }
+}

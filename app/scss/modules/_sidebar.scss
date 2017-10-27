@@ -1,0 +1,13 @@
+.sidebar{
+    grid-area: sidebar;
+}
+
+@supports (grid-area: auto) {
+@include respond-to ('pc'){
+.sidebar{
+
+    background-color: white;
+
+}
+}
+}

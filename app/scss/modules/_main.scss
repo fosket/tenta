@@ -1,0 +1,14 @@
+
+.main{
+    h1{
+        color: white;
+    }
+}
+
+@supports (grid-area: auto) {
+@include respond-to ('pc'){
+.main{
+    grid-area: main;
+}
+}
+}

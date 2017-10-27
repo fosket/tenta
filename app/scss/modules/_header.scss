@@ -1,0 +1,19 @@
+//styling till headern, centrerar text samt säger vart den ska befinna sig i gridden
+
+header {
+    grid-area: header;
+    position: relative;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    li{
+        display: inline-block;
+        color: white;
+    }
+    h1{
+     position: absolute;
+     width: 100%;
+     bottom: 0;
+     text-align: center;
+    }
+}

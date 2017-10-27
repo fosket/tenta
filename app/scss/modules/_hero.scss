@@ -1,0 +1,9 @@
+//stylar hero och sätter bild som bakgrund
+.hero{
+    background-image: url(../images/scotland.png);
+    height: 50vh;
+    line-height: 25vh;
+    text-align: center;
+    color: white;
+    grid-area: hero;
+}
